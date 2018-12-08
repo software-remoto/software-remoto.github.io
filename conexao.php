@@ -2,8 +2,8 @@
 
 
 $host = "localhost"; 
-$usuario = "consultview";  
-$password = "consultview@2019"; 
+$usuario = "";  
+$password = ""; 
 $nameDB = "happyclient";
 
 
