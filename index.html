@@ -1,73 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
+
 <head>
-	<meta charset="UTF-8">
-	<title>Happy-Client</title>
-	
-	
-<link rel="stylesheet" type="text/css" href="style.css"/>
-<script src="script.js"></script>
-<div class="name">HappyClient</div>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	
+	<!--titulo da tela de login-->
+	<title>HappyClient/login</title>
+	
+	<!--chama o arquivo login.css -->
+	<link rel="stylesheet" type="text/css" href="C:\Users\janiel\Desktop\hcWeb\controler\login.css"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!--title div name -->
+	<div class="name">HappyClient</div>
+	
 </head>
-<body>
-   
 
-<div class="layout">
-		
-	<div class="item" id="idVotoExcelente" onclick="votoExcelente()"><img src="img-svg/excelente.svg"/>
-		<br><br>
-			<tr><u>EXCELENTE</u></tr>
-        
-        <div class="botao">
-		  <div id="contador1">0</div><br>  
-		    <input type="button" id="botao1"  value="Limpar" onClick="botao1()"/>
-	    </div>
-	</div>
-	
+<body class="light-green lighten-5">
 
-	<div class="item" id="idVotoBom" onclick="votoBom()" ><img src="img-svg/bom.svg"/>
-		<br><br>
-			<tr><u>BOM</u></tr>
-        
-        <div class="botao">
-		 <div id="contador2">0</div><br>  
-		  <input type="button" id="botao2"  value="Limpar" onClick="botao2();"/>
-	    </div>
-	</div>
-		
-	<div class="item" id="idVotoRegular" onclick="votoRegular()"><img src="img-svg/regular.svg"/>
-		<br><br>
-			<tr><u>REGULAR</u></tr>
-        
-        <div class="botao">
-		 <div id="contador3">0</div><br>  
-		  <input type="button" id="botao3"  value="Limpar" onClick="botao3()"/>	
-	    </div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <form class="login-form">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="C:\Users\janiel\Desktop\hcWeb\img-svg\excelente.svg">
+                      
+                        </div>
+                        <div class="card-content">
+                            <div class="input-field">
+                                <input class="validate" id="email" type="email">
+                                <label for="email">Email</label>
+                            </div>
 
-	<div class="item" id="idVotoRuim" onclick="votoRuim()"><img src="img-svg/ruim.svg"/>
-		<br><br>
-			<tr><u>RUIM</u></tr>
-        
-        <div class="botao">
-		 <div id="contador4">0</div><br>  
-		  <input type="button" id="botao4"  value="Limpar" onClick="botao4()"/>
-	    </div>
-	</div>
-		
-	<div class="item" id="idVotoPessimo" onclick="votoPessimo()"><img src="img-svg/pessimo.svg"/> 
-		<br><br>
-			<tr><u>PESSIMO</u></tr>
-        
-        <div class="botao">
-		 <div id="contador5">0</div><br>  
-		  <input type="button" id="botao5"  value="Limpar" onClick="botao5();"/>
-	    </div>
-	</div>
-				
- </div>
+                            <div class="row">
+                                <div class="col s12 m8 l9">
+                                    <div class="input-field">
+                                        <input id="password" type="password">
+                                        <label for="password">Senha</label>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4 l3">
+                                    <div class="input-field">
+                                        <input type="checkbox" id="remember-me" />
+                                        <label for="remember-me">Lembrar</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action blue-grey lighten-3">
+                            <div class="center-align">
+                                <a href="index-voto.html" class="btn blue-grey darken-1"><i class="material-icons left">vpn_key</i>Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col s4">
+                        <a href="#">Registrar</a>
+                    </div>
+                    <div class="col s8 right-align">
+                        <a href="#" class="">Esqueci a senha</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 </body>
+
 </html>
