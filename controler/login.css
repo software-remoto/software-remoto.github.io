@@ -1,0 +1,38 @@
+ html,
+    body {
+        height: 100%;
+		}       
+    html {
+		display: table;
+        margin: auto;
+		}
+    body {
+		display: table-cell;
+        vertical-align: middle;
+		background:linear-gradient(blue,white,blue);	
+		font-family:'Times New Roman',Times,serif;	
+        }
+    
+	.margin {
+		margin: 0 !important;
+        }
+	.name{
+		font-size:10vmin;	
+		text-align:center;
+		}
+	.container{
+		width:750px;
+		
+		}
+	.card-image{
+		max-width:150px;
+		min-width:auto;
+		min-height:auto;
+		max-height:150px;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		}
