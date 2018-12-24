@@ -2,66 +2,76 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
-	<title>Happy-Client</title>
 	
-	
+	<title>HappyClient</title>
+<!--connection in style.css-->	
 <link rel="stylesheet" type="text/css" href="controler\style.css"/>
+
+<!--connection in javaScript-->	
 <script src="controler\script.js"></script>
+
+<!--title initial body-->	
 <div class="name">HappyClient</div>
+
+<!--definicao do tamanho da tela -->	
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
    
-
+<!--classe principal total da pagina-->
 <div class="layout">
-		
+
+		<!--criando imagem e botao de voto excelente -->
 	<div class="item" id="idVotoExcelente" onclick="votoExcelente()"><img src="img-svg/excelente.svg"/>
 		<br><br>
 			<tr><u>EXCELENTE</u></tr>
         
-        <div class="botao">
+        <div class="botao1">
 		  <div id="contador1">0</div><br>  
 		    <input type="button" id="botao1"  value="Limpar" onClick="botao1()"/>
-	    </div>
-	</div>
+		  </div>
+		</div>
 	
-
+	<!--criando imagem e botao de voto bom -->
 	<div class="item" id="idVotoBom" onclick="votoBom()" ><img src="img-svg/bom.svg"/>
 		<br><br>
 			<tr><u>BOM</u></tr>
         
-        <div class="botao">
+        <div class="botao2">
 		 <div id="contador2">0</div><br>  
 		  <input type="button" id="botao2"  value="Limpar" onClick="botao2();"/>
 	    </div>
 	</div>
-		
+	
+<!--criando imagem e botao de voto regular -->	
 	<div class="item" id="idVotoRegular" onclick="votoRegular()"><img src="img-svg/regular.svg"/>
 		<br><br>
 			<tr><u>REGULAR</u></tr>
         
-        <div class="botao">
+        <div class="botao3">
 		 <div id="contador3">0</div><br>  
 		  <input type="button" id="botao3"  value="Limpar" onClick="botao3()"/>	
 	    </div>
 	</div>
 
+	<!--criando imagem e botao de voto ruim -->
 	<div class="item" id="idVotoRuim" onclick="votoRuim()"><img src="img-svg/ruim.svg"/>
 		<br><br>
 			<tr><u>RUIM</u></tr>
         
-        <div class="botao">
+        <div class="botao4">
 		 <div id="contador4">0</div><br>  
 		  <input type="button" id="botao4"  value="Limpar" onClick="botao4()"/>
 	    </div>
 	</div>
 		
+		<!--criando imagem e botao de voto pessimo -->
 	<div class="item" id="idVotoPessimo" onclick="votoPessimo()"><img src="img-svg/pessimo.svg"/> 
 		<br><br>
 			<tr><u>PESSIMO</u></tr>
         
-        <div class="botao">
+        <div class="botao5">
 		 <div id="contador5">0</div><br>  
 		  <input type="button" id="botao5"  value="Limpar" onClick="botao5();"/>
 	    </div>
